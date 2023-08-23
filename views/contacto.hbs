@@ -1,0 +1,35 @@
+<div class="container" style="margin: 60px auto;"></div>
+<section class="hero">
+  <div class="col-md-4 mt-4 mt-sm-0">
+    <h2>CONTACTANOS</h2>
+    <form class="row g-3" action="/contacto" method="post" class="formulario">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre">
+      </div>
+      <div class="col-md-6">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" name="apellido">
+      </div>
+      <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+      </div>
+      <div class="col-12">
+        <label for="tel" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="tel" placeholder="..." name="tel">
+      </div>
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="2" name="mensaje">
+            </textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        
+      </div>
+      <h5>{{message}}</h5>
+    </form>
+  </div>
+  </div>
+  </div>

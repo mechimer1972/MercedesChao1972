@@ -1,0 +1,95 @@
+<div class="container-fluid mt-3"></div>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/musculacion3.jpg" alt="musculacion 3" class="d-block">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>{{title}}</h1>
+          {{#if conocido}}
+          <h5>Bienvenido/a {{nombre}} <a href="/salir">Salir</a></h5>
+          {{/if}}
+          {{#unless conocido}}
+          <h3>No te conozco</h3>
+          <form action="/ingresar" method="post">
+            <input type="text" name="nombre"><button>Ingresar</button>
+          </form>
+          {{/unless}}
+          <h1 class="red-text-shadow">MUSCULACIÓN</h1>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel4.jpg" alt="imagen 4" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">CLASES DE FUNCIONAL</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel5.jpg" alt="imagen 5" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">G.A.P.</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel7.jpg" alt="imagen 7" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">CLASES INDIVIDUALES</h1>
+        <h2 class="red-text-shadow">-RUTINAS PERSONALIZADAS-</h2>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel6.jpg" alt="imagen 6" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">CLASES GRUPALES</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/equipamiento.jpg" alt="imagen 4" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">EQUIPAMIENTO PREMIUM</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/nutricionista.jpg" alt="nutricionista" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">NUTRICIÓN DEPORTIVA</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/suplementos.jpg" alt="suplementos" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">SUPLEMENTACIÓN DEPORTIVA</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/indumentaria.jpg" alt="indumentaria" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">INDUMENTARIA Y ACCESORIOS</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/boxing.jpg" alt="boxeo" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="red-text-shadow">BAFitness: ¡ENTRENAMIENTO SIN EXCUSAS!</h1>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
